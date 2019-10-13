@@ -1,0 +1,50 @@
+{
+    "name": "rafaellessa/laravel_l6",
+    "description": "Reliese Components for Laravel Framework code generation.",
+    "keywords": ["reliese", "laravel"],
+    "support": {
+        "issues": "https://github.com/rafaellessa/laravel_l6/issues",
+        "source": "https://github.com/rafaellessa/laravel_l6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rafael Lessa",
+            "email": "rafael.lessa15@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "doctrine/dbal": "~2.5",
+        "illuminate/support": "^6.0",
+        "illuminate/database": "^6.0",
+        "illuminate/contracts": "^6.0",
+        "illuminate/filesystem": "^6.0",
+        "illuminate/console": "^6.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reliese\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Reliese\\Coders\\CodersServiceProvider"
+            ]
+        }
+    }
+}
